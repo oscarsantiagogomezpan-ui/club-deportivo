@@ -1,0 +1,105 @@
+package com.clubdeportivo;
+
+import java.sql.*;
+
+public class ClubesDAO {
+
+    // Credenciales de conexión (coincidan con la base de datos local)
+    private static final String URL = "jdbc:mysql://localhost:3306/clubdb";
+    private static final String USUARIO = "root";
+    private static final String CONTRASENA = "Santiago2004#"; // 
+
+    // 1. Funcionalidad de INSERCIÓN (Create)
+    public void insertarClub(String nombre, String direccion, String tipo) {
+        String sql = "INSERT INTO clubes (nombre, direccion, tipo) VALUES (?, ?, ?)";
+
+        try (Connection conn = DriverManager.getConnection(URL, USUARIO, CONTRASENA);
+             PreparedStatement stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
+
+            stmt.setString(1, nombre);
+            stmt.setString(2, direccion);
+            stmt.setString(3, tipo);
+
+            int filas = stmt.executeUpdate();
+            if (filas > 0) {
+                ResultSet rs = stmt.getGeneratedKeys();
+                if (rs.next()) {
+                    System.out.println("✅ Club insertado correctamente. ID generado: " + rs.getInt(1));
+                }
+            }
+        } catch (SQLException e) {
+            System.out.println("❌ Error al insertar el club.");
+            e.printStackTrace();
+        }
+    }
+
+    // 2. Funcionalidad de CONSULTA (Read)
+    public void listarClubes() {
+        String sql = "SELECT * FROM clubes";
+
+        try (Connection conn = DriverManager.getConnection(URL, USUARIO, CONTRASENA);
+             Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery(sql)) {
+
+            System.out.println("\n--- LISTA DE CLUBES REGISTRADOS ---");
+            while (rs.next()) {
+                System.out.println("ID: " + rs.getInt("id") + 
+                                   " | Nombre: " + rs.getString("nombre") + 
+                                   " | Dirección: " + rs.getString("direccion") + 
+                                   " | Tipo: " + rs.getString("tipo"));
+            }
+            System.out.println("-----------------------------------\n");
+
+        } catch (SQLException e) {
+            System.out.println("❌ Error al consultar los clubes.");
+            e.printStackTrace();
+        }
+    }
+
+    // 3. Funcionalidad de ACTUALIZACIÓN (Update)
+    public void actualizarClub(int id, String nuevoNombre, String nuevaDireccion, String nuevoTipo) {
+        String sql = "UPDATE clubes SET nombre = ?, direccion = ?, tipo = ? WHERE id = ?";
+
+        try (Connection conn = DriverManager.getConnection(URL, USUARIO, CONTRASENA);
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+
+            stmt.setString(1, nuevoNombre);
+            stmt.setString(2, nuevaDireccion);
+            stmt.setString(3, nuevoTipo);
+            stmt.setInt(4, id);
+
+            int filasModificadas = stmt.executeUpdate();
+            if (filasModificadas > 0) {
+                System.out.println("✅ Club con ID " + id + " actualizado correctamente.");
+            } else {
+                System.out.println("⚠️ No se encontró ningún club con el ID " + id);
+            }
+
+        } catch (SQLException e) {
+            System.out.println("❌ Error al actualizar el club.");
+            e.printStackTrace();
+        }
+    }
+
+    // 4. Funcionalidad de ELIMINACIÓN (Delete)
+    public void eliminarClub(int id) {
+        String sql = "DELETE FROM clubes WHERE id = ?";
+
+        try (Connection conn = DriverManager.getConnection(URL, USUARIO, CONTRASENA);
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+
+            stmt.setInt(1, id);
+
+            int filasEliminadas = stmt.executeUpdate();
+            if (filasEliminadas > 0) {
+                System.out.println("✅ Club con ID " + id + " eliminado correctamente.");
+            } else {
+                System.out.println("⚠️ No se encontró ningún club con el ID " + id + " para eliminar.");
+            }
+
+        } catch (SQLException e) {
+            System.out.println("❌ Error al eliminar el club.");
+            e.printStackTrace();
+        }
+    }
+}
