@@ -2,4 +2,4 @@ EVIDENCIA: GA7-220501096-AA2-EV02 módulos de software codificados y probados
 APRENDIZ: Oscar Gómez
 
 Enlace del repositorio en GitHub:
-[PEGA_AQUÍ_TU_ENLACE_DE_GITHUB]
+https://github.com/oscarsantiagogomezpan-ui/club-deportivo
