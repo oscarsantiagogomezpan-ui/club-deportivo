@@ -1,5 +1,7 @@
-EVIDENCIA: GA7-220501096-AA2-EV02 módulos de software codificados y probados
-APRENDIZ: Oscar Gómez
-
 Enlace del repositorio en GitHub:
 https://github.com/oscarsantiagogomezpan-ui/club-deportivo
+Nota técnica: 
+El repositorio contiene la codificación de la API requerida. 
+- Se crearon dos servicios (endpoints): '/api/registro' y '/api/login'.
+- El código se encuentra debidamente comentado explicando el flujo de trabajo.
+- Se implementaron las validaciones solicitadas: si el inicio de sesión es correcto, el servicio responde "autenticación satisfactoria"; de lo contrario, responde "error en la autenticación" devolviendo los códigos de estado HTTP correspondientes.
