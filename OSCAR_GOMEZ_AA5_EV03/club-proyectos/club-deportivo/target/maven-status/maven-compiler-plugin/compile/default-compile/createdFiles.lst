@@ -1,0 +1,14 @@
+com\servicios\controller\AuthController.class
+com\clubdeportivo\InscripcionesDAO.class
+com\clubdeportivo\servlets\AuthServlet.class
+com\clubdeportivo\App.class
+com\clubdeportivo\dao\ClubesDAO.class
+com\clubdeportivo\SociosDAO.class
+com\clubdeportivo\ActividadesDAO.class
+com\api\servicios\LoginServiceServlet.class
+com\clubdeportivo\Main.class
+com\api\servicios\BaseDatosUsuarios.class
+com\servicios\controller\ClubesController.class
+com\api\servicios\RegistroServiceServlet.class
+com\clubdeportivo\servlets\ClubServlet.class
+com\servicios\ClubDeportivoApplication.class
