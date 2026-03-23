@@ -1,7 +1,7 @@
-Enlace del repositorio en GitHub:
+EVIDENCIA: GA7-220501096-AA5-EV02 API (Testing)
+APRENDIZ: Oscar Gómez
+
+Enlace del repositorio:
 https://github.com/oscarsantiagogomezpan-ui/club-deportivo
-Nota técnica: 
-El repositorio contiene la codificación de la API requerida. 
-- Se crearon dos servicios (endpoints): '/api/registro' y '/api/login'.
-- El código se encuentra debidamente comentado explicando el flujo de trabajo.
-- Se implementaron las validaciones solicitadas: si el inicio de sesión es correcto, el servicio responde "autenticación satisfactoria"; de lo contrario, responde "error en la autenticación" devolviendo los códigos de estado HTTP correspondientes.
+
+Descripción: El repositorio contiene el código fuente de la API en Java (Spring Boot), la configuración de los controladores de autenticación y la colección de Postman utilizada para las pruebas de registro y login.

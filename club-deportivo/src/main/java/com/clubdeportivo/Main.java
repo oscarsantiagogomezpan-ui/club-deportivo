@@ -1,5 +1,7 @@
 package com.clubdeportivo;
 
+import com.clubdeportivo.dao.ClubesDAO;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Iniciando pruebas del módulo de Clubes (CRUD con JDBC)...\n");
