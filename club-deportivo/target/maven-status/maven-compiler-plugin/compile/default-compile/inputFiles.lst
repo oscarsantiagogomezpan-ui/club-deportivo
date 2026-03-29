@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\oscar\Desktop\OSCAR_GOMEZ_AA5_EV03\club-proyectos\club-deportivo\src\main\java\com\clubdeportivo\dao\ClubesDAO.java
 C:\Users\oscar\Desktop\OSCAR_GOMEZ_AA5_EV03\club-proyectos\club-deportivo\src\main\java\com\clubdeportivo\servlets\AuthServlet.java
 C:\Users\oscar\Desktop\OSCAR_GOMEZ_AA5_EV03\club-proyectos\club-deportivo\src\main\java\com.api.servicios\RegistroServiceServlet.java
@@ -12,3 +13,8 @@ C:\Users\oscar\Desktop\OSCAR_GOMEZ_AA5_EV03\club-proyectos\club-deportivo\src\ma
 C:\Users\oscar\Desktop\OSCAR_GOMEZ_AA5_EV03\club-proyectos\club-deportivo\src\main\java\com\clubdeportivo\dao\InscripcionesDAO.java
 C:\Users\oscar\Desktop\OSCAR_GOMEZ_AA5_EV03\club-proyectos\club-deportivo\src\main\java\com\clubdeportivo\dao\SociosDAO.java
 C:\Users\oscar\Desktop\OSCAR_GOMEZ_AA5_EV03\club-proyectos\club-deportivo\src\main\java\com\servicios\ClubDeportivoApplication.java
+=======
+C:\Users\oscar\Desktop\club-proyectos\club-deportivo\src\main\java\com\clubdeportivo\App.java
+C:\Users\oscar\Desktop\club-proyectos\club-deportivo\src\main\java\com\clubdeportivo\Main.java
+C:\Users\oscar\Desktop\club-proyectos\club-deportivo\src\main\java\com\clubdeportivo\SociosDAO.java
+>>>>>>> cdbfaf589c4e9a8f008c0834dad45af30f805abb

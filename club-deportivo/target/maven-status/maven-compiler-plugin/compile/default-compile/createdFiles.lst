@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 com\servicios\controller\AuthController.class
 com\clubdeportivo\InscripcionesDAO.class
 com\clubdeportivo\servlets\AuthServlet.class
@@ -12,3 +13,8 @@ com\servicios\controller\ClubesController.class
 com\api\servicios\RegistroServiceServlet.class
 com\clubdeportivo\servlets\ClubServlet.class
 com\servicios\ClubDeportivoApplication.class
+=======
+com\clubdeportivo\Main.class
+com\clubdeportivo\App.class
+com\clubdeportivo\SociosDAO.class
+>>>>>>> cdbfaf589c4e9a8f008c0834dad45af30f805abb

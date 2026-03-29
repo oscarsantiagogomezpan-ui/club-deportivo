@@ -1,7 +1,75 @@
-EVIDENCIA: GA7-220501096-AA5-EV02 API (Testing)
+EVIDENCIA: GA7-220501096-AA3-EV02 API (Testing)
 APRENDIZ: Oscar Gómez
 
 Enlace del repositorio:
 https://github.com/oscarsantiagogomezpan-ui/club-deportivo
 
 Descripción: El repositorio contiene el código fuente de la API en Java (Spring Boot), la configuración de los controladores de autenticación y la colección de Postman utilizada para las pruebas de registro y login.
+
+
+Proces en GitHub
+
+PS C:\Users\oscar\Desktop\ZIP\OSCAR_GOMEZ_AA3_EV02\club-proyectos\club-deportivo> git add .
+warning: in the working copy of 'club-deportivo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'club-deportivo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'club-deportivo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst', LF will be replaced by CRLF the next time Git touches it
+ create mode 100644 club-deportivo/target/classes/com/api/servicios/LoginServiceServlet.class
+ create mode 100644 club-deportivo/target/classes/com/servicios/ClubDeportivoApplication.class
+ create mode 100644 club-deportivo/target/classes/com/servicios/controller/AuthController.class
+ create mode 100644 club-deportivo/target/classes/com/servicios/controller/ClubesController.class
+ create mode 100644 club-deportivo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+ create mode 100644 club-deportivo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+PS C:\Users\oscar\Desktop\ZIP\OSCAR_GOMEZ_AA3_EV02\club-proyectos\club-deportivo> git push origin maIN
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS C:\Users\oscar\Desktop\ZIP\OSCAR_GOMEZ_AA3_EV02\club-proyectos\club-deportivo> git push origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS C:\Users\oscar\Desktop\ZIP\OSCAR_GOMEZ_AA3_EV02\club-proyectos\club-deportivo> git remote add origin https://github.com/oscarsantiagogomezpan-ui/club-deportivo
+PS C:\Users\oscar\Desktop\ZIP\OSCAR_GOMEZ_AA3_EV02\club-proyectos\club-deportivo> git push -u origin main
+info: please complete authentication in your browser...
+To https://github.com/oscarsantiagogomezpan-ui/club-deportivo
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/oscarsantiagogomezpan-ui/club-deportivo'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\oscar\Desktop\git pull origin main --allow-unrelated-historiesortivo>
+remote: Enumerating objects: 170, done.
+remote: Counting objects: 100% (170/170), done.
+remote: Compressing objects: 100% (125/125), done.
+mpiler-plugin/compile/default-compile/createdFiles.lst
+CONFLICT (add/add): Merge conflict in club-deportivo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+Auto-merging club-deportivo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+CONFLICT (add/add): Merge conflict in club-deportivo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+warning: Cannot merge binary files: club-deportivo/target/test-classes/com/clubdeportivo/AppTest.class (HEAD vs. cdbfaf589c4e9a8f008c0834dad45af30f805abb)
+Auto-merging club-deportivo/target/test-classes/com/clubdeportivo/AppTest.class
+CONFLICT (add/add): Merge conflict in club-deportivo/target/test-classes/com/clubdeportivo/AppTest.class
+Automatic merge failed; fix conflicts and then commit the result.
+PS C:\Users\oscar\Desktop\ZIP\OSCAR_GOMEZ_AA3_EV02\club-proyectos\club-deportivo> git push -u origin main
+To https://github.com/oscarsantiagogomezpan-ui/club-deportivo
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/oscarsantiagogomezpan-ui/club-deportivo'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\oscar\Desktop\ZIP\OSCAR_GOMEZ_AA3_EV02\club-proyectos\club-deportivo> git push -f origin main
+Enumerating objects: 144, done.
+Counting objects: 100% (144/144), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (102/102), done.
+Writing objects: 100% (144/144), 37.97 KiB | 1.05 MiB/s, done.
+Total 144 (delta 19), reused 38 (delta 3), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (19/19), done.
+To https://github.com/oscarsantiagogomezpan-ui/club-deportivo
+ + cdbfaf5...b7e2b03 main -> main (forced update)
+PS C:\Users\oscar\Desktop\ZIP\OSCAR_GOMEZ_AA3_EV02\club-proyectos\club-deportivo>
